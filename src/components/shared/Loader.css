@@ -128,3 +128,22 @@
   font-size: 0.95rem;
   color: #6b6478;
 }
+.mobile-dock {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1.5rem 1rem 6rem;
+  }
+
+  .mobile-dock {
+    display: flex;
+    justify-content: center;
+  }
+}

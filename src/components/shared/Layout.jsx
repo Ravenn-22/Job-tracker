@@ -1,13 +1,16 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext.jsx";
 import { useTheme } from "../../context/ThemeContext.jsx";
+import { useLocation } from "react-router-dom";
+import Dock from "./Dock.jsx";
+
 import "./Layout.css";
 
 const Layout = ({ children }) => {
   const { darkMode, toggleDarkMode } = useTheme();
   const { user, logout } = useAuth();
   const navigate = useNavigate();
-
+  const location = useLocation();
   const handleLogout = () => {
     logout();
     navigate("/");
@@ -21,6 +24,39 @@ const Layout = ({ children }) => {
         .toUpperCase()
         .slice(0, 2)
     : "?";
+
+  const dockItems = [
+    {
+      icon: <span style={{ fontSize: "1.1rem" }}>▤</span>,
+      label: "Dashboard",
+      onClick: () => navigate("/dashboard"),
+      active: location.pathname === "/dashboard",
+    },
+    {
+      icon: <span style={{ fontSize: "1.1rem" }}>◈</span>,
+      label: "Applications",
+      onClick: () => navigate("/applications"),
+      active: location.pathname === "/applications",
+    },
+    {
+      icon: <span style={{ fontSize: "1.1rem" }}>◎</span>,
+      label: "Interviews",
+      onClick: () => navigate("/interviews"),
+      active: location.pathname === "/interviews",
+    },
+    {
+      icon: <span style={{ fontSize: "1.1rem" }}>◷</span>,
+      label: "Events",
+      onClick: () => navigate("/events"),
+      active: location.pathname === "/events",
+    },
+    {
+      icon: <span style={{ fontSize: "1.1rem" }}>❏</span>,
+      label: "Resumes",
+      onClick: () => navigate("/resumes"),
+      active: location.pathname === "/resumes",
+    },
+  ];
 
   return (
     <div className="layout">
@@ -295,6 +331,15 @@ const Layout = ({ children }) => {
       </aside>
 
       <main className="main-content">{children}</main>
+
+      <div className="mobile-dock">
+        <Dock
+          items={dockItems}
+          panelHeight={64}
+          baseItemSize={46}
+          magnification={60}
+        />
+      </div>
     </div>
   );
 };
