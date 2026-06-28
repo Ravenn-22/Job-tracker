@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://georn-tracker.onrender.com",
+  baseURL: "https://georn-tracker.onrender.com/api",
 });
 
 api.interceptors.request.use((config) => {
