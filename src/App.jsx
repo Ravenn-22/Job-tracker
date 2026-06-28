@@ -10,6 +10,9 @@ import Events from "./pages/Events.jsx";
 import Resumes from "./pages/Resumes.jsx";
 import Loader from "./components/shared/PageLoader.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import NotFound from "./pages/NotFound.jsx";
+
+
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -72,6 +75,8 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
       <Analytics />
     </>
