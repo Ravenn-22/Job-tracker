@@ -6,7 +6,7 @@ import FadeIn from "../components/shared/FadeIn.jsx";
 import careerProgress from "../assets/career-progress.png";
 import workingLate from "../assets/working-late.png";
 import remoteWorker from "../assets/remote-worker.png";
-import useActiveSection from "../hooks/UseActiveSection.js";
+import useActiveSection from "../hooks/UseActSection.js";
 import skylineImg from "../assets/footer-skyline.jpg";
 
 const quickLinks = [
