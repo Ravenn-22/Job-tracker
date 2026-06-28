@@ -9,7 +9,7 @@ import Interviews from "./pages/Interviews.jsx";
 import Events from "./pages/Events.jsx";
 import Resumes from "./pages/Resumes.jsx";
 import Loader from "./components/shared/PageLoader.jsx";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
