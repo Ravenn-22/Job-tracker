@@ -210,3 +210,18 @@
 #toggle:checked + svg #stars {
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1.5rem 1rem 6rem;
+  }
+
+  .mobile-dock {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -18,3 +18,19 @@
   background: #E2E8F0;
   border-radius: 4px;
 }
+@media (max-width: 768px) {
+  .kanban-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    overflow-x: unset;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .kanban-board {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}

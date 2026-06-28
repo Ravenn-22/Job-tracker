@@ -124,3 +124,21 @@
 .note-item-delete:hover {
   color: #EF4444;
 }
+@media (max-width: 768px) {
+  .notes-input {
+    font-size: 0.875rem;
+  }
+
+  .notes-submit {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .note-item-body {
+    padding: 0.75rem;
+  }
+
+  .note-item-content {
+    font-size: 0.85rem;
+  }
+}

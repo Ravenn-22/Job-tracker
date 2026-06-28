@@ -145,3 +145,46 @@
   font-size: 1rem;
   margin-left: auto;
 }
+
+@media (max-width: 768px) {
+  .interviews-title {
+    font-size: 1.5rem;
+  }
+
+  .interview-row {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .interview-row-left {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .interview-row-rounds {
+    width: 100%;
+  }
+
+  .interview-row-next {
+    min-width: unset;
+    text-align: left;
+    width: 100%;
+  }
+
+  .interview-row-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .interview-row-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 0.875rem;
+  }
+
+  .interview-row-company {
+    font-size: 0.875rem;
+  }
+}

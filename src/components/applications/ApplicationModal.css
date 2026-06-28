@@ -144,3 +144,29 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
+@media (max-width: 768px) {
+  .modal {
+    padding: 1.5rem;
+    max-height: 95vh;
+    border-radius: 12px;
+  }
+
+  .modal-row {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-overlay {
+    align-items: flex-end;
+  }
+
+  .modal {
+    border-radius: 16px 16px 0 0;
+    max-height: 90vh;
+  }
+}

@@ -61,3 +61,10 @@
   text-align: center;
   padding: 1.5rem 0;
 }
+@media (max-width: 768px) {
+  .kanban-column {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+}
