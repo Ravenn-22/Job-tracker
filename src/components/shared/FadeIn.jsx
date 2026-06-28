@@ -1,4 +1,4 @@
-import useInView from "../../hooks/useInView.js";
+import useInView from "../../hooks/UseView.js";
 import "./FadeIn.css";
 
 const FadeIn = ({ children, delay = 0, direction = "up" }) => {
