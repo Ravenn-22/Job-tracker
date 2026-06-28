@@ -56,12 +56,6 @@ const Layout = ({ children }) => {
       onClick: () => navigate("/resumes"),
       active: location.pathname === "/resumes",
     },
-    {
-      icon: <span style={{ fontSize: "1.1rem" }}>⏻</span>,
-      label: "Logout",
-      onClick: handleLogout,
-      active: false,
-    },
   ];
 
   return (
