@@ -3,6 +3,7 @@ import Layout from "../components/shared/Layout.jsx";
 import api from "../api/axios.js";
 import "./Resumes.css";
 import emptyResumes from "../assets/empty-resumes.svg";
+import PageLoader from "../components/shared/PageLoader.jsx";
 
 const Resumes = () => {
   const [resumes, setResumes] = useState([]);
@@ -141,7 +142,7 @@ const Resumes = () => {
         )}
 
         {loading ? (
-          <p className="resumes-loading">Loading...</p>
+         <PageLoader label="Loading resumes..." inline/>
         ) : resumes.length === 0 ? (
           <div className="empty-state">
             <img

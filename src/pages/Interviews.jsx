@@ -4,6 +4,7 @@ import Layout from "../components/shared/Layout.jsx";
 import api from "../api/axios.js";
 import "./Interviews.css";
 import emptyInterviews from "../assets/empty-interviews.svg";
+import PageLoader from "../components/shared/PageLoader.jsx";
 
 const OUTCOME_COLORS = {
   Pending: "#F59E0B",
@@ -61,7 +62,7 @@ const Interviews = () => {
         </div>
 
         {loading ? (
-          <p className="interviews-loading">Loading...</p>
+          <PageLoader label="Loading interviews..."inline />
         ) : applications.length === 0 ? (
           <div className="empty-state">
             <img

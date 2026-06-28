@@ -16,6 +16,7 @@ import {
 import Layout from "../components/shared/Layout.jsx";
 import api from "../api/axios.js";
 import "./Dashboard.css";
+import PageLoader from "../components/shared/PageLoader.jsx";
 
 const getStatusMessage = (stats, applications) => {
   if (!stats || !applications) return null;
@@ -116,12 +117,11 @@ const Dashboard = () => {
 
   const salaryInsights = getSalaryInsights(applications);
 
-  if (loading)
-    return (
-      <Layout>
-        <div className="dashboard-loading">Loading...</div>
-      </Layout>
-    );
+  if (loading) return (
+  <Layout>
+    <PageLoader label="Loading dashboard..." inline/>
+  </Layout>
+);
 
   const pieData = stats
     ? Object.entries(stats.byStatus).map(([name, value]) => ({ name, value }))

@@ -6,6 +6,7 @@ import InterviewModal from "../components/interviews/InterviewModal.jsx";
 import api from "../api/axios.js";
 import NotesTimeline from "../components/applications/NotesTimeline.jsx";
 import "./ApplicationDetail.css";
+import PageLoader from "../components/shared/PageLoader.jsx";
 
 const STATUS_COLORS = {
   Wishlist: "#8B5CF6",
@@ -70,7 +71,7 @@ const ApplicationDetail = () => {
   if (loading) {
     return (
       <Layout>
-        <p className="detail-loading">Loading...</p>
+        <PageLoader label="Loading application..." inline />
       </Layout>
     );
   }

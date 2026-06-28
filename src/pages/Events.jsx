@@ -4,6 +4,7 @@ import Layout from "../components/shared/Layout.jsx";
 import api from "../api/axios.js";
 import "./Events.css";
 import emptyEvents from "../assets/empty-events.svg";
+import PageLoader from "../components/shared/PageLoader.jsx";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -126,7 +127,7 @@ const Events = () => {
         </div>
 
         {loading ? (
-          <p className="events-loading">Loading...</p>
+          <PageLoader label="Loading events..." inline />
         ) : filtered.length === 0 ? (
           <div className="empty-state">
             <img

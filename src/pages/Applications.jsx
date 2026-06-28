@@ -6,6 +6,7 @@ import api from "../api/axios.js";
 import "./Applications.css";
 import emptyApplications from "../assets/empty-applications.svg";
 import confetti from "canvas-confetti";
+import PageLoader from "../components/shared/PageLoader.jsx";
 
 const STATUSES = [
   "All",
@@ -181,7 +182,7 @@ const Applications = () => {
         </div>
 
       {loading ? (
-  <p className="applications-loading">Loading...</p>
+ <PageLoader label="Loading applications..." inline/>
 ) : filtered.length === 0 && applications.length === 0 ? (
   <div className="empty-state">
     <img src={emptyApplications} alt="No applications" className="empty-state-img" />

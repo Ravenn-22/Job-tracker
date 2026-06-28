@@ -147,3 +147,10 @@
     justify-content: center;
   }
 }
+.page-loader-overlay--inline {
+  position: static;
+  inset: unset;
+  background: transparent;
+  z-index: unset;
+  min-height: 60vh;
+}
