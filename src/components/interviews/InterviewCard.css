@@ -1,0 +1,84 @@
+.interview-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.interview-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.interview-card-round {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin-bottom: 0.15rem;
+}
+
+.interview-card-interviewer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.interview-card-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.interview-card-outcome {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.interview-card-actions {
+  display: flex;
+  gap: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.interview-card:hover .interview-card-actions {
+  opacity: 1;
+}
+
+.interview-card-btn {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.2rem 0.35rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.interview-card-btn:hover {
+  background: #F1F5F9;
+  color: var(--text-primary);
+}
+
+.interview-card-btn--delete:hover {
+  background: #FEF2F2;
+  color: #EF4444;
+}
+
+.interview-card-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.interview-card-notes {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  border-top: 1px solid var(--card-border);
+  padding-top: 0.75rem;
+  margin-top: 0.25rem;
+}

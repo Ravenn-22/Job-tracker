@@ -1,0 +1,147 @@
+.interviews-page {
+  width: 100%;
+}
+
+.interviews-header {
+  margin-bottom: 2rem;
+}
+
+.interviews-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.interviews-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.interviews-loading {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.interviews-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+}
+
+.interviews-empty p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.interviews-empty span {
+  font-size: 0.875rem;
+}
+
+.interviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.interview-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.interview-row:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.interview-row-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.interview-row-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #EFF6FF;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.interview-row-company {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin-bottom: 0.15rem;
+}
+
+.interview-row-role {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.interview-row-rounds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.interview-row-round {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+.interview-row-next {
+  min-width: 140px;
+  text-align: right;
+}
+
+.interview-row-next-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.interview-row-next-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.interview-row-next-round {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+.interview-row-no-next {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.interview-row-arrow {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-left: auto;
+}

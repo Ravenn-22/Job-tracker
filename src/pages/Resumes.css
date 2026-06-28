@@ -1,0 +1,235 @@
+.resumes-page {
+  width: 100%;
+}
+
+.resumes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.resumes-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.resumes-upload-btn {
+  padding: 0.65rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.resumes-upload-btn:hover {
+  background: var(--accent-hover);
+}
+
+.resumes-name-prompt {
+  background: #F8FAFC;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resumes-name-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.resumes-name-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.resumes-name-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.resumes-name-input:focus {
+  border-color: var(--accent);
+}
+
+.resumes-name-confirm {
+  padding: 0.7rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.resumes-name-confirm:hover {
+  background: var(--accent-hover);
+}
+
+.resumes-name-confirm:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.resumes-name-cancel {
+  padding: 0.7rem 1rem;
+  background: none;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.resumes-name-cancel:hover {
+  border-color: var(--text-muted);
+  color: var(--text-primary);
+}
+
+.resumes-loading {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.resumes-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+}
+
+.resumes-empty p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.resumes-empty span {
+  font-size: 0.875rem;
+}
+
+.resumes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.resume-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.resume-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #FEF2F2;
+  color: #EF4444;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+}
+
+.resume-card-info {
+  flex: 1;
+}
+
+.resume-card-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin-bottom: 0.2rem;
+}
+
+.resume-card-meta {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+.resume-edit-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.resume-edit-input {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  outline: none;
+  width: 200px;
+}
+
+.resume-edit-save {
+  padding: 0.4rem 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.resume-edit-cancel {
+  padding: 0.4rem 0.75rem;
+  background: none;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.resume-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.resume-action-btn {
+  padding: 0.45rem 0.875rem;
+  background: none;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.resume-action-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.resume-action-btn--delete:hover {
+  border-color: #EF4444;
+  color: #EF4444;
+}

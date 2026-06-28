@@ -1,0 +1,61 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #FFFFFF;
+  --sidebar: #0F172A;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --card-bg: #FFFFFF;
+  --card-border: #F1F5F9;
+  --shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --text-primary: #1E293B;
+  --text-muted: #64748B;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Status colors */
+  --wishlist: #8B5CF6;
+  --applied: #2563EB;
+  --interview: #F59E0B;
+  --offer: #10B981;
+  --rejected: #EF4444;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+input, textarea, select {
+  font-family: var(--font-body);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+[data-theme="dark"] {
+  --bg: #0F172A;
+  --card-bg: #1E293B;
+  --card-border: #334155;
+  --shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --text-primary: #F1F5F9;
+  --text-muted: #94A3B8;
+  --sidebar: #020617;
+}

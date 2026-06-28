@@ -1,0 +1,126 @@
+.notes-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.notes-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.notes-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s;
+  line-height: 1.6;
+}
+
+.notes-input:focus {
+  border-color: var(--accent);
+}
+
+.notes-submit {
+  align-self: flex-end;
+  padding: 0.6rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.notes-submit:hover {
+  background: var(--accent-hover);
+}
+
+.notes-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.notes-empty {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 2px solid #E2E8F0;
+  margin-left: 0.5rem;
+}
+
+.note-item {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.note-item:last-child {
+  padding-bottom: 0;
+}
+
+.note-item-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--accent);
+  flex-shrink: 0;
+  margin-left: -6px;
+  margin-top: 0.35rem;
+}
+
+.note-item-body {
+  flex: 1;
+  background: #F8FAFC;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 0.875rem 1rem;
+}
+
+.note-item-content {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.note-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note-item-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.note-item-delete {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.note-item-delete:hover {
+  color: #EF4444;
+}

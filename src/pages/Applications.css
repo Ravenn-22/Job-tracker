@@ -1,0 +1,112 @@
+.applications-page {
+  width: 100%;
+}
+
+.applications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.applications-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.applications-cta {
+  padding: 0.65rem 1.25rem;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.applications-cta:hover {
+  background-color: var(--accent-hover);
+}
+
+.applications-loading {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+.applications-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+
+.applications-search {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.7rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: var(--font-body);
+}
+
+.applications-search:focus {
+  border-color: var(--accent);
+}
+
+.applications-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.applications-filter-btn {
+  padding: 0.4rem 0.875rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.applications-filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.applications-filter-btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.applications-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.applications-export-btn {
+  padding: 0.65rem 1.25rem;
+  background: none;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.applications-export-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.applications-export-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,0 +1,25 @@
+.fadein {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fadein--up {
+  transform: translateY(30px);
+}
+
+.fadein--down {
+  transform: translateY(-30px);
+}
+
+.fadein--left {
+  transform: translateX(-30px);
+}
+
+.fadein--right {
+  transform: translateX(30px);
+}
+
+.fadein--visible {
+  opacity: 1;
+  transform: translate(0);
+}
