@@ -1,5 +1,5 @@
 .notfound-page {
-  min-height: 100vh;
+  height: 100vh;
   background: var(--bg);
   padding: 40px 24px;
   display: grid;
