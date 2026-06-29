@@ -46,7 +46,7 @@ const Login = () => {
     try {
       const { data } = await api.post("/auth/register", registerForm);
       login(data);
-      navigate("/");
+      navigate("/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Something went wrong");
     } finally {
